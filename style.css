@@ -1,0 +1,101 @@
+*, ::before, ::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.title{
+    font-family: 'Inconsolata', sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.bad-news, .msg, button{
+    font-family: 'Space Mono', sans-serif;
+    
+}
+.footer{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+.bad-news{
+    position: absolute;
+    top: 0;
+}
+.msg{
+    position: absolute;
+    top: 40%;
+}
+button{
+    position: absolute;
+    top: 80%;
+    padding: 15px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+img {
+    width: 30%;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+}
+.content{
+    position: absolute;
+    width: 25%;
+    height: 375px;
+    right: 15%;
+    top: 30%;
+}
+
+@media only screen and (max-width: 500px){
+
+    body{
+        height: 100vh;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    img{
+        width: 85%;
+        position: absolute;
+        left: 29px;
+        top: 90px;
+    }
+    .content{
+        width: 375px;
+        height: 380px;
+        position: absolute;
+        top: 390px;
+        left: 1%;
+    }
+    .footer{
+        display: block;
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+    }
+    .bad-news{
+        font-size: 30px;
+    }
+    .msg{
+        font-size: 15px;
+        position: absolute;
+        top: 30%;
+    }
+    button{
+        position: absolute;
+        top: 60%;
+        left: 25%;
+    }
+
+}
